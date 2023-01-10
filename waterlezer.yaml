@@ -1,7 +1,7 @@
 substitutions:
   device_name: waterlezer
   device_description: Water meter sensor 
-  version: "v22.12.2"
+  version: "v22.12.3"
 
 esphome:
   name: ${device_name}
@@ -24,7 +24,7 @@ status_led:
     inverted: true
 
 dashboard_import:
-  package_import_url: github://mhendriks/esphome-p1/waterlezer.yaml
+  package_import_url: github://tomrennen/esphome-p1/waterlezer.yaml
 
 wifi:
 #  ssid: !secret ssid
