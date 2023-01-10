@@ -84,7 +84,15 @@ sensor:
     internal_filter: 100us
     accuracy_decimals: 0
     unit_of_measurement: 'L/min'
-  
+  - platform: pulse_counter
+    pin:
+      number: 5
+      mode:
+        input: true
+        pullup: true
+    id: watermeter_raw_pulse
+    name: "Watermeter raw pulse
+    unit_of_measurement: 'L/min'
   - platform: template
     name: "Watermeter total"
     state_class: "total_increasing"
